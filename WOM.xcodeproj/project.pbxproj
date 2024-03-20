@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D85FBFC6A6EFFB947C4459 /* Pods_WOMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA21828BB4FD161F9EC4938 /* Pods_WOMTests.framework */; };
+		5ACA1988BA4ED1DBFFC6EC45 /* Pods_WOM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76273E7FD35BC5F249B68CF5 /* Pods_WOM.framework */; };
+		752F5D1D2BA8DC8A007C9B59 /* SongsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F5D1C2BA8DC8A007C9B59 /* SongsViewModel.swift */; };
+		752F5D1F2BA906CC007C9B59 /* WOMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F5D1E2BA906CC007C9B59 /* WOMApp.swift */; };
+		75440DB92BA8C16400E17E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75440DB82BA8C16400E17E95 /* Assets.xcassets */; };
+		75440DBC2BA8C16400E17E95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75440DBB2BA8C16400E17E95 /* Preview Assets.xcassets */; };
+		75440DC62BA8C16400E17E95 /* WOMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DC52BA8C16400E17E95 /* WOMTests.swift */; };
+		75440DE82BA8C23500E17E95 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DE02BA8C23500E17E95 /* FavoritesView.swift */; };
+		75440DE92BA8C23500E17E95 /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DE12BA8C23500E17E95 /* SongsView.swift */; };
+		75440DEA2BA8C23500E17E95 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DE22BA8C23500E17E95 /* FavoritesManager.swift */; };
+		75440DEB2BA8C23500E17E95 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DE32BA8C23500E17E95 /* Song.swift */; };
+		75440DEC2BA8C23500E17E95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DE42BA8C23500E17E95 /* ContentView.swift */; };
+		75440DED2BA8C23500E17E95 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DE52BA8C23500E17E95 /* ApiManager.swift */; };
+		75440DEE2BA8C23500E17E95 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75440DE62BA8C23500E17E95 /* SongRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75440DC22BA8C16400E17E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75440DA72BA8C16200E17E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75440DAE2BA8C16200E17E95;
+			remoteInfo = WOM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A061A1AE59E63D5A0BAE826 /* Pods_WOM_WOMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOM_WOMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		527800828D638B5385AD0E13 /* Pods-WOM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOM.debug.xcconfig"; path = "Target Support Files/Pods-WOM/Pods-WOM.debug.xcconfig"; sourceTree = "<group>"; };
+		752F5D1C2BA8DC8A007C9B59 /* SongsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewModel.swift; sourceTree = "<group>"; };
+		752F5D1E2BA906CC007C9B59 /* WOMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOMApp.swift; sourceTree = "<group>"; };
+		75440DAF2BA8C16200E17E95 /* WOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75440DB82BA8C16400E17E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75440DBB2BA8C16400E17E95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75440DC12BA8C16400E17E95 /* WOMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75440DC52BA8C16400E17E95 /* WOMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOMTests.swift; sourceTree = "<group>"; };
+		75440DCF2BA8C16400E17E95 /* WOMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOMUITests.swift; sourceTree = "<group>"; };
+		75440DD12BA8C16400E17E95 /* WOMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75440DDE2BA8C23400E17E95 /* WOM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WOM-Bridging-Header.h"; sourceTree = "<group>"; };
+		75440DE02BA8C23500E17E95 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		75440DE12BA8C23500E17E95 /* SongsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		75440DE22BA8C23500E17E95 /* FavoritesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		75440DE32BA8C23500E17E95 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		75440DE42BA8C23500E17E95 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75440DE52BA8C23500E17E95 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		75440DE62BA8C23500E17E95 /* SongRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
+		76273E7FD35BC5F249B68CF5 /* Pods_WOM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7980601801E88B461DD68D8D /* Pods-WOMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOMTests.debug.xcconfig"; path = "Target Support Files/Pods-WOMTests/Pods-WOMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80D1F2B6DC4E3AD9C45DC642 /* Pods-WOM-WOMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOM-WOMUITests.debug.xcconfig"; path = "Target Support Files/Pods-WOM-WOMUITests/Pods-WOM-WOMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A208C1B96989B41DBA33A99 /* Pods-WOMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOMTests.release.xcconfig"; path = "Target Support Files/Pods-WOMTests/Pods-WOMTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1A8C29671EEA612A81295E9 /* Pods-WOM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOM.release.xcconfig"; path = "Target Support Files/Pods-WOM/Pods-WOM.release.xcconfig"; sourceTree = "<group>"; };
+		E3C4862F01F671DAF0BC302E /* Pods-WOM-WOMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOM-WOMUITests.release.xcconfig"; path = "Target Support Files/Pods-WOM-WOMUITests/Pods-WOM-WOMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDA21828BB4FD161F9EC4938 /* Pods_WOMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75440DAC2BA8C16200E17E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACA1988BA4ED1DBFFC6EC45 /* Pods_WOM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75440DBE2BA8C16400E17E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D85FBFC6A6EFFB947C4459 /* Pods_WOMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10602ECBA573A3DC5F1CB13B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				527800828D638B5385AD0E13 /* Pods-WOM.debug.xcconfig */,
+				A1A8C29671EEA612A81295E9 /* Pods-WOM.release.xcconfig */,
+				80D1F2B6DC4E3AD9C45DC642 /* Pods-WOM-WOMUITests.debug.xcconfig */,
+				E3C4862F01F671DAF0BC302E /* Pods-WOM-WOMUITests.release.xcconfig */,
+				7980601801E88B461DD68D8D /* Pods-WOMTests.debug.xcconfig */,
+				8A208C1B96989B41DBA33A99 /* Pods-WOMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		75440DA62BA8C16200E17E95 = {
+			isa = PBXGroup;
+			children = (
+				75440DB12BA8C16200E17E95 /* WOM */,
+				75440DC42BA8C16400E17E95 /* WOMTests */,
+				75440DCE2BA8C16400E17E95 /* WOMUITests */,
+				75440DB02BA8C16200E17E95 /* Products */,
+				10602ECBA573A3DC5F1CB13B /* Pods */,
+				FA916CFD1632B24F12C5175F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75440DB02BA8C16200E17E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75440DAF2BA8C16200E17E95 /* WOM.app */,
+				75440DC12BA8C16400E17E95 /* WOMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75440DB12BA8C16200E17E95 /* WOM */ = {
+			isa = PBXGroup;
+			children = (
+				75440DE52BA8C23500E17E95 /* ApiManager.swift */,
+				75440DE42BA8C23500E17E95 /* ContentView.swift */,
+				752F5D1E2BA906CC007C9B59 /* WOMApp.swift */,
+				75440DE22BA8C23500E17E95 /* FavoritesManager.swift */,
+				75440DE02BA8C23500E17E95 /* FavoritesView.swift */,
+				75440DE32BA8C23500E17E95 /* Song.swift */,
+				75440DE62BA8C23500E17E95 /* SongRow.swift */,
+				752F5D1C2BA8DC8A007C9B59 /* SongsViewModel.swift */,
+				75440DE12BA8C23500E17E95 /* SongsView.swift */,
+				75440DB82BA8C16400E17E95 /* Assets.xcassets */,
+				75440DBA2BA8C16400E17E95 /* Preview Content */,
+				75440DDE2BA8C23400E17E95 /* WOM-Bridging-Header.h */,
+			);
+			path = WOM;
+			sourceTree = "<group>";
+		};
+		75440DBA2BA8C16400E17E95 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				75440DBB2BA8C16400E17E95 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75440DC42BA8C16400E17E95 /* WOMTests */ = {
+			isa = PBXGroup;
+			children = (
+				75440DC52BA8C16400E17E95 /* WOMTests.swift */,
+			);
+			path = WOMTests;
+			sourceTree = "<group>";
+		};
+		75440DCE2BA8C16400E17E95 /* WOMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75440DCF2BA8C16400E17E95 /* WOMUITests.swift */,
+				75440DD12BA8C16400E17E95 /* WOMUITestsLaunchTests.swift */,
+			);
+			path = WOMUITests;
+			sourceTree = "<group>";
+		};
+		FA916CFD1632B24F12C5175F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76273E7FD35BC5F249B68CF5 /* Pods_WOM.framework */,
+				2A061A1AE59E63D5A0BAE826 /* Pods_WOM_WOMUITests.framework */,
+				FDA21828BB4FD161F9EC4938 /* Pods_WOMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75440DAE2BA8C16200E17E95 /* WOM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75440DD52BA8C16400E17E95 /* Build configuration list for PBXNativeTarget "WOM" */;
+			buildPhases = (
+				39558336169FA81A68DD4D98 /* [CP] Check Pods Manifest.lock */,
+				75440DAB2BA8C16200E17E95 /* Sources */,
+				75440DAC2BA8C16200E17E95 /* Frameworks */,
+				75440DAD2BA8C16200E17E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WOM;
+			productName = WOM;
+			productReference = 75440DAF2BA8C16200E17E95 /* WOM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75440DC02BA8C16400E17E95 /* WOMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75440DD82BA8C16400E17E95 /* Build configuration list for PBXNativeTarget "WOMTests" */;
+			buildPhases = (
+				A3AE86014AD541C6CA3B7297 /* [CP] Check Pods Manifest.lock */,
+				75440DBD2BA8C16400E17E95 /* Sources */,
+				75440DBE2BA8C16400E17E95 /* Frameworks */,
+				75440DBF2BA8C16400E17E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75440DC32BA8C16400E17E95 /* PBXTargetDependency */,
+			);
+			name = WOMTests;
+			productName = WOMTests;
+			productReference = 75440DC12BA8C16400E17E95 /* WOMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75440DA72BA8C16200E17E95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					75440DAE2BA8C16200E17E95 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = "";
+					};
+					75440DC02BA8C16400E17E95 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 75440DAE2BA8C16200E17E95;
+					};
+				};
+			};
+			buildConfigurationList = 75440DAA2BA8C16200E17E95 /* Build configuration list for PBXProject "WOM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75440DA62BA8C16200E17E95;
+			productRefGroup = 75440DB02BA8C16200E17E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75440DAE2BA8C16200E17E95 /* WOM */,
+				75440DC02BA8C16400E17E95 /* WOMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75440DAD2BA8C16200E17E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75440DBC2BA8C16400E17E95 /* Preview Assets.xcassets in Resources */,
+				75440DB92BA8C16400E17E95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75440DBF2BA8C16400E17E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39558336169FA81A68DD4D98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WOM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3AE86014AD541C6CA3B7297 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WOMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75440DAB2BA8C16200E17E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75440DE82BA8C23500E17E95 /* FavoritesView.swift in Sources */,
+				752F5D1D2BA8DC8A007C9B59 /* SongsViewModel.swift in Sources */,
+				75440DE92BA8C23500E17E95 /* SongsView.swift in Sources */,
+				75440DEC2BA8C23500E17E95 /* ContentView.swift in Sources */,
+				752F5D1F2BA906CC007C9B59 /* WOMApp.swift in Sources */,
+				75440DED2BA8C23500E17E95 /* ApiManager.swift in Sources */,
+				75440DEA2BA8C23500E17E95 /* FavoritesManager.swift in Sources */,
+				75440DEB2BA8C23500E17E95 /* Song.swift in Sources */,
+				75440DEE2BA8C23500E17E95 /* SongRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75440DBD2BA8C16400E17E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75440DC62BA8C16400E17E95 /* WOMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75440DC32BA8C16400E17E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75440DAE2BA8C16200E17E95 /* WOM */;
+			targetProxy = 75440DC22BA8C16400E17E95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		75440DD32BA8C16400E17E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75440DD42BA8C16400E17E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75440DD62BA8C16400E17E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527800828D638B5385AD0E13 /* Pods-WOM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WOM/Preview Content\"";
+				DEVELOPMENT_TEAM = F39Y8DU76Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WOM-Test.WOM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WOM/WOM-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75440DD72BA8C16400E17E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A8C29671EEA612A81295E9 /* Pods-WOM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WOM/Preview Content\"";
+				DEVELOPMENT_TEAM = F39Y8DU76Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WOM-Test.WOM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WOM/WOM-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75440DD92BA8C16400E17E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7980601801E88B461DD68D8D /* Pods-WOMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F39Y8DU76Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WOM-Test.WOMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WOM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WOM";
+			};
+			name = Debug;
+		};
+		75440DDA2BA8C16400E17E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A208C1B96989B41DBA33A99 /* Pods-WOMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F39Y8DU76Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WOM-Test.WOMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WOM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WOM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75440DAA2BA8C16200E17E95 /* Build configuration list for PBXProject "WOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75440DD32BA8C16400E17E95 /* Debug */,
+				75440DD42BA8C16400E17E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75440DD52BA8C16400E17E95 /* Build configuration list for PBXNativeTarget "WOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75440DD62BA8C16400E17E95 /* Debug */,
+				75440DD72BA8C16400E17E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75440DD82BA8C16400E17E95 /* Build configuration list for PBXNativeTarget "WOMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75440DD92BA8C16400E17E95 /* Debug */,
+				75440DDA2BA8C16400E17E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75440DA72BA8C16200E17E95 /* Project object */;
+}
